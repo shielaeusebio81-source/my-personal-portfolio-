@@ -1,0 +1,255 @@
+
+/* GENERAL STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER AND NAVIGATION */
+header {
+    background-color: #14213d;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    font-size: 26px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #70a1ff;
+}
+
+/* HOME SECTION */
+#home {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #dce7ff, #ffffff);
+}
+
+#home h1 {
+    color: #14213d;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+#home h3 {
+    color: #3157a4;
+    margin-bottom: 15px;
+}
+
+#home p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3157a4;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #14213d;
+    transform: translateY(-3px);
+}
+
+/* ALL SECTIONS */
+section {
+    padding: 70px 10%;
+}
+
+section h2 {
+    color: #14213d;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section h3 {
+    color: #3157a4;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+/* PERSONAL INFORMATION */
+#about {
+    background-color: white;
+}
+
+#about p {
+    font-size: 16px;
+}
+
+/* EDUCATIONAL BACKGROUND */
+#education {
+    background-color: #eaf0ff;
+}
+
+#education h3 {
+    background-color: white;
+    padding: 12px;
+    border-left: 5px solid #3157a4;
+    border-radius: 5px;
+}
+
+#education p {
+    margin-left: 15px;
+}
+
+/* SKILLS SECTION */
+#skills {
+    background-color: white;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: #f4f7fc;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #dce3f0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: #3157a4;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+}
+
+/* JAVA CODE SECTION */
+#java {
+    background-color: #eaf0ff;
+}
+
+#java pre {
+    background-color: #14213d;
+    color: #dce7ff;
+    padding: 25px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+#java code {
+    font-family: Consolas, monospace;
+}
+
+/* FOOTER */
+footer {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+    #home h3 {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    #java pre {
+        font-size: 12px;
+    }
+}
